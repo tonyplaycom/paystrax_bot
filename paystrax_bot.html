@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+  window.protoSettings = {
+    id: '01K7ZHN5K32QRFMD2ES8E9ANPM',
+    onInit: function () {
+      window.proto.identify('testing_001');
+    },
+  };
+
+  var prs = document.createElement('script');
+  prs.src = 'https://embed.yola.ai/index.umd.js';
+  prs.type = 'text/javascript';
+  prs.async = true;
+  prs.onload = function () {
+    window.proto.init(window.protoSettings);
+  };
+  document.head.appendChild(prs);
+</script>
+</body>
+</html>
